@@ -1,5 +1,73 @@
 * {
 	font-family: 'Noto Serif JP', serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background: rgb(3, 65, 89);
+	background: linear-gradient(
+		90deg,
+		rgba(3, 65, 89, 1) 0%,
+		rgba(2, 115, 94, 1) 50%,
+		rgba(12, 242, 93, 1) 100%
+	);
+	height: 100vh;
+}
+
+.calculator-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 390px;
+	max-height: 390px;
+	border: 2px solid #426a8c;
+	margin: auto auto;
+	margin-top: 270px;
+}
+
+.keyboard-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.keyboard-top {
+	display: flex;
+}
+.clear {
+	flex: 2;
+}
+.remainder,
+.backspace {
+	flex: 1;
+}
+
+.keyboard-middle-wrapper {
+	display: flex;
+}
+.keyboard-left {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 3;
+}
+
+.keyboard-left > button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 80px;
+	flex: 2 0 80px;
+}
+
+.keyboard-right {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.keyboard-right > button {
+	width: 98.5px;
 }
 
 /* Icon alignments */
@@ -8,6 +76,9 @@
 }
 .numbers {
 	font-size: 20px;
-	width: 40px;
-	height: 40px;
+}
+
+button {
+	width: 60px;
+	height: 60px;
 }
