@@ -36,9 +36,17 @@ body {
 /* Display Results */
 
 .display-container {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 	width: 390px;
 	min-height: 100px;
 	background-color: hsla(197, 93%, 18%, 0.5);
+}
+
+.result {
+	font-size: 36px;
+	margin-right: 10px;
 }
 
 /* Keyboard */
@@ -119,4 +127,13 @@ button {
 	height: 60px;
 	background-color: hsla(197, 93%, 18%, 0.5);
 	border-right: 2px solid white;
+}
+
+button:hover {
+	background: rgb(2, 115, 94);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 115, 94, 0.6615021008403361) 0%,
+		rgba(3, 140, 62, 1) 100%
+	);
 }
