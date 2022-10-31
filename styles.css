@@ -2,6 +2,8 @@
 	font-family: 'Noto Serif JP', serif;
 	padding: 0px;
 	margin: 0px;
+	border: 0px;
+	color: white;
 }
 
 body {
@@ -21,19 +23,32 @@ body {
 	justify-content: center;
 	align-items: center;
 	max-width: 390px;
-	max-height: 390px;
-	border: 2px solid #426a8c;
 	margin: auto auto;
 	margin-top: 270px;
+	border: 3px solid #034159;
 }
+
+/* Display Results */
+
+.display-container {
+	width: 390px;
+	min-height: 100px;
+	background-color: hsla(197, 93%, 18%, 0.5);
+}
+
+/* Keyboard */
 
 .keyboard-wrapper {
 	display: flex;
 	flex-direction: column;
 }
 
+/* Keyboard Top Section */
+
 .keyboard-top {
 	display: flex;
+	border-top: 2px solid #034159;
+	border-bottom: 2px solid white;
 }
 .clear {
 	flex: 2;
@@ -42,12 +57,15 @@ body {
 .backspace {
 	flex: 1;
 }
-
+/* Keyboard Middle Section */
 .keyboard-middle-wrapper {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .keyboard-left {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	flex: 3;
 }
@@ -58,7 +76,8 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	height: 80px;
-	flex: 2 0 80px;
+
+	flex: 2 1 80.2px;
 }
 
 .keyboard-right {
@@ -70,6 +89,17 @@ body {
 	width: 98.5px;
 }
 
+/* Keyboard Bottom Section */
+.keyboard-bottom-wrapper {
+	display: flex;
+	border-top: 2px solid white;
+}
+.number0 {
+	flex: 2;
+}
+.numbers {
+	flex: 1;
+}
 /* Icon alignments */
 .diagonal {
 	transform: rotate(125deg);
@@ -81,4 +111,6 @@ body {
 button {
 	width: 60px;
 	height: 60px;
+	background-color: hsla(197, 93%, 18%, 0.5);
+	/* border-right: 2px solid white; */
 }
