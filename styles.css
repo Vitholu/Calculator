@@ -3,7 +3,12 @@
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
+	box-sizing: border-box;
 	color: white;
+}
+
+.end {
+	border: 0px !important;
 }
 
 body {
@@ -75,18 +80,19 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	width: 95.5px !important;
 	height: 80px;
 
-	flex: 2 1 80.2px;
+	flex: 2 0 80px;
 }
 
 .keyboard-right {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
 }
 .keyboard-right > button {
-	width: 98.5px;
+	min-width: 94.8px !important;
+	flex: 1 0 60px;
 }
 
 /* Keyboard Bottom Section */
@@ -112,5 +118,5 @@ button {
 	width: 60px;
 	height: 60px;
 	background-color: hsla(197, 93%, 18%, 0.5);
-	/* border-right: 2px solid white; */
+	border-right: 2px solid white;
 }
