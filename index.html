@@ -19,55 +19,59 @@
 	<body>
 		<div class="calculator-wrapper">
 			<div class="display-container">
-				<div class="result">011111</div>
+				<div class="result">0</div>
 			</div>
 			<div class="keyboard-wrapper">
 				<!-- Clear - % - Delete -->
 				<div class="keyboard-top">
-					<button class="clear">
-						<span class="material-symbols-outlined"> clear_all </span>
+					<button class="clear" id="cls">
+						<span class="material-symbols-outlined" id="cls"> clear_all </span>
 					</button>
-					<button class="remainder">
-						<span class="material-symbols-outlined"> percent </span>
+					<button class="remainder" id="rmdr">
+						<span class="material-symbols-outlined" id="rmdr"> percent </span>
 					</button>
-					<button class="backspace end">
-						<span class="material-symbols-outlined"> backspace </span>
+					<button class="backspace end" id="bsp">
+						<span class="material-symbols-outlined" id="bsp"> backspace </span>
 					</button>
 				</div>
 				<!-- 1 => 9 && / * - +  -->
 				<div class="keyboard-middle-wrapper">
 					<div class="keyboard-left">
-						<button class="numbers">1</button>
-						<button class="numbers">2</button>
-						<button class="numbers pad">3</button>
-						<button class="numbers">4</button>
-						<button class="numbers">5</button>
-						<button class="numbers pad">6</button>
-						<button class="numbers">7</button>
-						<button class="numbers">8</button>
-						<button class="numbers pad">9</button>
+						<button class="numbers" id="1">1</button>
+						<button class="numbers" id="2">2</button>
+						<button class="numbers pad" id="3">3</button>
+						<button class="numbers" id="4">4</button>
+						<button class="numbers" id="5">5</button>
+						<button class="numbers pad" id="6">6</button>
+						<button class="numbers" id="7">7</button>
+						<button class="numbers" id="8">8</button>
+						<button class="numbers pad" id="9">9</button>
 					</div>
 					<div class="keyboard-right">
-						<button class="end">
-							<span class="material-symbols-outlined diagonal">
+						<button class="end" id="divide">
+							<span class="material-symbols-outlined diagonal" id="divide">
 								horizontal_rule
 							</span>
 						</button>
-						<button class="end">
-							<span class="material-symbols-outlined"> close </span>
+						<button class="end" id="multiply">
+							<span class="material-symbols-outlined" id="multiply">
+								close
+							</span>
 						</button>
-						<button class="end">
-							<span class="material-symbols-outlined"> horizontal_rule </span>
+						<button class="end" id="subtract">
+							<span class="material-symbols-outlined" id="subtract">
+								horizontal_rule
+							</span>
 						</button>
-						<button class="end">
-							<span class="material-symbols-outlined"> add </span>
+						<button class="end" id="add">
+							<span class="material-symbols-outlined" id="add"> add </span>
 						</button>
 					</div>
 				</div>
 				<div class="keyboard-bottom-wrapper">
-					<button class="number0">0</button>
-					<button class="numbers">.</button>
-					<button class="numbers end">=</button>
+					<button class="number0" id="0">0</button>
+					<button class="numbers" id=".">.</button>
+					<button class="numbers end" id="=">=</button>
 				</div>
 			</div>
 		</div>
